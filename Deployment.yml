@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: sample-webpage
-        image: sample-app:63
+        image: nginx:latest
+        imagePullPolicy : Never
         ports:
         - containerPort: 80
 
